@@ -6,24 +6,23 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-GOLD = '#b1883c'
-TEAL = '#37867b'
-INK = '#493e2f'
+GOLD = '#3B82F6'
+TEAL = '#35B99A'
+INK = '#4A5870'
 
 
 def theme():
+    """Dashboard palette aligned with the clean pastel StockDash design."""
     st.markdown('''<style>
-    .stApp{background:#f8f6f1;color:#352e25}
-    [data-testid="stSidebar"]{background:#eee7da!important}
-    [data-testid="stSidebar"] *{color:#493e2f!important}
-    .block-container{max-width:1400px;padding-top:2rem}
-    [data-testid="stVerticalBlockBorderWrapper"]>div{border-color:#e7e0d3!important;border-radius:16px!important;background:#fffdf9}
-    [data-testid="stMetric"]{background:#fffdf9;border:1px solid #e7e0d3;border-radius:14px;padding:18px 22px}
-    [data-testid="stMetricValue"]{font-family:Georgia,serif;color:#715625}
-    .stButton>button[kind="primary"]{background:#9a742f;border-color:#9a742f;color:white}
-    .px-eyebrow{font-size:13px;letter-spacing:2px;color:#98763a;margin:0 0 5px}
-    .px-business{padding:20px 22px;border-left:3px solid #b1883c;background:#f4efe4;border-radius:0 12px 12px 0;font-size:16px;line-height:1.8}
-    h1,h2,h3{color:#493e2f!important;letter-spacing:-.03em}
+    .stApp{background:#F5F8FC;color:#17233A}
+    [data-testid="stSidebar"]{background:#FFFFFF!important;border-right:1px solid #E4EAF3}
+    [data-testid="stVerticalBlockBorderWrapper"]>div{border-color:#E4EAF3!important;border-radius:15px!important;background:#FFFFFF;box-shadow:0 7px 22px rgba(31,53,88,.035)}
+    [data-testid="stMetric"]{background:#FFFFFF;border:1px solid #E4EAF3;border-radius:15px;padding:16px 18px;box-shadow:0 7px 22px rgba(31,53,88,.035)}
+    [data-testid="stMetricValue"]{font-family:inherit;color:#17233A;font-weight:820}
+    .stButton>button[kind="primary"]{background:#3B82F6;border-color:#3B82F6;color:white}
+    .px-eyebrow{font-size:11px;letter-spacing:1.5px;color:#3978D9;margin:0 0 5px}
+    .px-business{padding:18px 20px;border-left:3px solid #8B72D8;background:#F7F4FF;border-radius:0 12px 12px 0;font-size:15px;line-height:1.75}
+    h1,h2,h3{color:#17233A!important;letter-spacing:-.03em}
     </style>''', unsafe_allow_html=True)
 
 
